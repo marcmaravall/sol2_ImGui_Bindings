@@ -1948,7 +1948,7 @@
                 },
                 {
                     "name": "ImGuiTreeNodeFlags_NavLeftJumpsBackHere",
-                    "value_expression": "ImGuiTreeNodeFlags_NavLeftJumpsToParent",
+                    "value_expression": "ImGuiTreeNodeFlags_NavLeftJumpsBackHere",
                     "value": 131072,
                     "is_count": false,
                     "comments": {
@@ -1967,7 +1967,7 @@
                     }
                 },
                 {
-                    "name": "ImGuiTreeNodeFlags_SpanTextWidth",
+                    "name": "ImGuiTreeNodeFlags_SpanLabelWidth",
                     "value_expression": "ImGuiTreeNodeFlags_SpanLabelWidth",
                     "value": 8192,
                     "is_count": false,

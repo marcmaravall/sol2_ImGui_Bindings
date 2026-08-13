@@ -896,7 +896,7 @@ static void InitEnum_ImGuiTreeNodeFlags(sol::state& lua) {
       {"DrawLinesFull", static_cast<long long>(ImGuiTreeNodeFlags_DrawLinesFull)},
       {"DrawLinesToNodes", static_cast<long long>(ImGuiTreeNodeFlags_DrawLinesToNodes)},
       {"NavLeftJumpsBackHere", static_cast<long long>(ImGuiTreeNodeFlags_NavLeftJumpsBackHere)},
-      {"SpanTextWidth", static_cast<long long>(ImGuiTreeNodeFlags_SpanTextWidth)}};
+      {"SpanTextWidth", static_cast<long long>(ImGuiTreeNodeFlags_SpanLabelWidth)}};
   RegisterEnum(lua, "ImGuiTreeNodeFlags", entries, sizeof(entries) / sizeof(entries[0]));
 }
 
