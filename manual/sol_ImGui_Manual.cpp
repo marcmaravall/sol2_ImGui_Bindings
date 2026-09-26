@@ -309,6 +309,8 @@ bool IsMousePosValid() { return ImGui::IsMousePosValid(); }
 bool IsMousePosValidAt(const ImVec2& pos) { return ImGui::IsMousePosValid(&pos); }
 void LogText(const std::string& text) { ImGui::LogText("%s", text.c_str()); }
 
+void ShowStyleEditor() { ImGui::ShowStyleEditor(); }
+
 }  // namespace
 
 void RegisterVecTypes(sol::state& lua) {
@@ -497,5 +499,7 @@ void InitManual(sol::table& t) {
     t.set_function("IsMousePosValid", sol::overload(IsMousePosValid, IsMousePosValidAt));
     // @lua LogText(text: string)
     t.set_function("LogText", LogText);
+
+    t.set_function("ShowStyleEditor", ShowStyleEditor);
 }
 }  // namespace sol_ImGui

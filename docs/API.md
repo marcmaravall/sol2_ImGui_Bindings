@@ -27,6 +27,9 @@ Dear ImGui **1.92.7**. Lists every function and enum these bindings expose to Lu
 - `ImGui.ShowUserGuide()` — add basic help/info block (not a window): how to manipulate ImGui as an end-user (mouse/keyboard controls).
 - `ImGui.GetVersion() -> string` — get the compiled version string e.g. "1.80 WIP" (essentially the value for IMGUI_VERSION from the compiled version of imgui.cpp)
 
+<!-- edited by hand: -->
+- `ImGui.ShowStyleEditor()` — add style editor block (not a window): how to manipulate ImGui styles.
+
 ### Windows
 
 - `ImGui.Begin(name: string) -> visible: boolean` †
